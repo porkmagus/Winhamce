@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Winhance (Unpackaged)": {
+      "commandName": "Project"
+    },
+    "Winhance (Packaged)": {
+      "commandName": "MsixPackage"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<ContentDialog
+    x:Class="Winhance.WinUI3.Features.Common.Views.UnifiedConfigurationDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    MinWidth="500"
+    MaxWidth="600">
+
+    <ScrollViewer MaxHeight="500">
+        <StackPanel Spacing="16" Padding="0,8,0,0">
+            <!-- Title (additional, not the dialog title) -->
+            <TextBlock x:Name="TitleTextBlock"
+                       Style="{StaticResource SubtitleTextBlockStyle}"
+                       TextWrapping="Wrap"/>
+
+            <!-- Description -->
+            <TextBlock x:Name="DescriptionTextBlock"
+                       Style="{StaticResource BodyTextBlockStyle}"
+                       TextWrapping="Wrap"
+                       Opacity="0.8"/>
+
+            <!-- Sections List -->
+            <Border Background="{ThemeResource LayerFillColorDefaultBrush}"
+                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                    BorderThickness="1"
+                    CornerRadius="8"
+                    Padding="16">
+                <StackPanel x:Name="SectionsPanel" Spacing="8">
+                    <!-- CheckBoxes will be added dynamically -->
+                </StackPanel>
+            </Border>
+
+            <!-- Info Box -->
+            <InfoBar 
+                Severity="Informational"
+                IsOpen="True"
+                IsClosable="False"
+                Message="Select the sections you want to include in the configuration."/>
+        </StackPanel>
+    </ScrollViewer>
+</ContentDialog>

@@ -1,0 +1,8 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- WinUI 3 uses built-in converters from CommunityToolkit.WinUI -->
+    <!-- This file is a placeholder for custom converters -->
+    
+</ResourceDictionary>
